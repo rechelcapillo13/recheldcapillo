@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: plum;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #e31b59;
+            font-size: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li{
+            margin: 0 10px;
+        }
+        nav ul a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 12px 20px;
+        }
+        nav ul a:hover {
+            color: #e31b59;
+        }
+        #about {
+            padding: 80px 20px;
+            text-align: center;
+            color: #000;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .about-col-1 {
+            flex-basis: 35%;
+        }
+        .about-col-2 {
+            flex-basis: 60%;
+            text-align: left;
+        }
+        .sub-title {
+            font-size: 40px;
+            color: #e31b59;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
+        .social-icons a {
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #e31b59;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #212121;
+        }
+        .adjusted-image{
+          width: 400px;
+          height: 400px; 
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>            
+        <h2><b>My Portfolio</b></h2>
+        <ul> 
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="project.html">PROJECT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg" alt="profile" class="adjusted-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Rechel Capillo, a second-year student currently pursuing studies in web development. I am passionate about building dynamic and responsive websites. My goal is to specialize in front-end development while exploring full-stack capabilities. With a growing portfolio, I am eager to contribute to innovative projects in the tech industry.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rechel.capillo?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>             
+                        <a href="https://github.com/rechelcapillo13" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
